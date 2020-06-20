@@ -6,7 +6,10 @@
   "scripts": {
     "build": "webpack --mode production --config ./config/webpack.prod.js",
     "dev": "webpack-dev-server --mode development --open --config ./config/webpack.dev.js",
-    "prettier": "prettier --write ./src/js/**/*.{js,jsx,json}"
+    "prettier": "prettier --write ./src/js/**/*.{js,jsx,json}",
+    "push:gh-pages": "gh-pages --dist dist --dest .",
+    "predeploy": "npm run build",
+    "deploy": "npm run push:gh-pages"
   },
   "repository": {
     "type": "git",
