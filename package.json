@@ -4,8 +4,8 @@
   "description": "Phaser & TypeScript Template",
   "main": "src/index.ts",
   "scripts": {
-    "build": "webpack --mode production --config ./config/webpack.prod.js",
-    "dev": "webpack-dev-server --mode development --open --config ./config/webpack.dev.js",
+    "build": "webpack --mode production --config ./config/webpack.config.js",
+    "dev": "webpack server --mode development --open --config ./config/webpack.config.js",
     "prettier": "prettier --write ./src/js/**/*.{js,jsx,json}",
     "push:gh-pages": "gh-pages --dist dist --dest .",
     "predeploy": "npm run build",
